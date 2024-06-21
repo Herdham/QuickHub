@@ -350,7 +350,7 @@
     justify-content: space-between;
     padding: 8px;
     position: sticky;
-    padding-top: 60px;
+    top: 10%;
 }
 
 .allmainpage main .carousel .scrollBtn{

@@ -467,7 +467,8 @@
     margin-bottom: 7px;
     width: 100%;
     display: none;
-    position: fixed;
+    position: sticky;
+    top: 10%;
     z-index: 8;
 }
 

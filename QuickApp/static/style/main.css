@@ -423,11 +423,11 @@
     display: none;
     height: 300px;
     overflow-y: scroll;
-    z-index: 10; 
 }
 
 .allmainpage main .carousel .categories_inner.category_show{
     display: block;
+    z-index: 10; 
 }
 
 .allmainpage main .carousel .categories_inner .category_wrapper li{
@@ -470,7 +470,7 @@
     display: none;
     position: sticky;
     top: 18%;
-    z-index: 8;
+    z-index: 5;
 }
 
 .allmainpage main .search_box input{

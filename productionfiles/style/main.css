@@ -204,11 +204,17 @@
     background-color: #fff;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
     margin-right: 15px;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.allmainpage nav .navbar .search_box1 .searchs .icons{
+    margin-right: 8px;
 }
 
 .allmainpage nav .navbar .search_box1 .searchs input{
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: none;
     outline: none;
 }
@@ -391,7 +397,8 @@
     background-color: #fff;
     width: 100%;
     z-index: 10;
-
+    position: fixed;
+    top: 48px;
 }
 
 .allmainpage main .carousel .scrollBtn{
@@ -451,7 +458,7 @@
 
 .allmainpage main .carousel .categories_inner{
     left: 4%;
-    top: 65px;
+    top: 75px;
     position: absolute;
     background-color: #fff;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
@@ -461,11 +468,11 @@
     display: none;
     height: 300px;
     overflow-y: scroll;
+    z-index: 5;
 }
 
 .allmainpage main .carousel .categories_inner.category_show{
     display: block;
-    z-index: 10; 
 }
 
 .allmainpage main .carousel .categories_inner .category_wrapper li{

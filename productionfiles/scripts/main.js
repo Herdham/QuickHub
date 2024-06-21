@@ -189,14 +189,14 @@ jQuery(() => {
         search.setAttribute('class', 'searchs')
         let inputs = document.createElement('input')
         inputs.setAttribute('type', 'text')
-        let icons = document.createElement('ion-icon')
-        icons.setAttribute('name', 'search-outline')
-        let icons1 = document.createElement('ion-icon')
-        icons1.setAttribute('name', 'close-outline')
-        icons.setAttribute('class', 'icons')
-        icons1.setAttribute('class', 'icons1')
         inputs.setAttribute('id', 'searchsbar')
         inputs.setAttribute('placeholder', 'What are you looking for')
+        let icons = document.createElement('ion-icon')
+        icons.setAttribute('name', 'search-outline')
+        icons.setAttribute('class', 'icons')
+        let icons1 = document.createElement('ion-icon')
+        icons1.setAttribute('name', 'close-outline')
+        icons1.setAttribute('class', 'icons1')
         search.append(inputs, icons)
         search_box1.append(search, icons1)
         $(second).before(search_box1)
@@ -204,11 +204,11 @@ jQuery(() => {
         $(second).hide()
         $(menu).hide()
     })
+
+    const icon = $('.icons')
+    $(icon).click(() => {
+        console.log("Hello World")
+    })
 })
 
 
-const icon = $('.icons1')
-$(icon).click(() => {
-    const search = document.querySelector('.search_box1')
-    $(search).hide()
-})

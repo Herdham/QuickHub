@@ -181,7 +181,7 @@
     font-weight: 700;
 }
 
-.allmainpage nav .navbar .second .OtherSearchBtn{
+.allmainpage nav .navbar .second #OtherSearchBtn{
     padding: 10px;
     background-color: #ffd700;
     border-radius: 50%;

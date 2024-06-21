@@ -181,6 +181,50 @@
     font-weight: 700;
 }
 
+
+.allmainpage main nav .search_box{
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 3px;
+    margin-bottom: 7px;
+    width: 100%;
+    display: none;
+    position: sticky;
+    top: 10%;
+    z-index: 5;
+}
+
+.allmainpage main nav .search_box input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    flex-grow: 3;
+}
+
+.allmainpage main nav .search_box #search_btn{
+    background-color: #ffd700;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 50%;
+}
+
+.allmainpage main nav .search_box #cancle_btn{
+    font-size: 22px;
+    font-weight: 900;
+    margin-right: 8px;
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: none;
+}
+
 .newelement{
     position: absolute;
     max-width: 250px;
@@ -349,11 +393,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    position: sticky;
-    top: 8%;
+    position: fixed;
     background-color: #fff;
     width: 100%;
     z-index: 8;
+
 }
 
 .allmainpage main .carousel .scrollBtn{
@@ -455,50 +499,6 @@
 .allmainpage main .carousel .categories_inner .category_wrapper li a{
     text-decoration: none;
     color: #000;
-}
-
-
-.allmainpage main .search_box{
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    padding: 3px;
-    margin-bottom: 7px;
-    width: 100%;
-    display: none;
-    position: sticky;
-    top: 18%;
-    z-index: 5;
-}
-
-.allmainpage main .search_box input{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    flex-grow: 3;
-}
-
-.allmainpage main .search_box #search_btn{
-    background-color: #ffd700;
-    padding: 12px;
-    font-size: 20px;
-    font-weight: 900;
-    border-radius: 50%;
-}
-
-.allmainpage main .search_box #cancle_btn{
-    font-size: 22px;
-    font-weight: 900;
-    margin-right: 8px;
-    padding: 5px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: none;
 }
 
 .allmainpage main .maincontainer{

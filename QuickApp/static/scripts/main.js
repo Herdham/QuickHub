@@ -175,7 +175,8 @@ jQuery(() => {
 })
 
 const othersearch = document.querySelector("#OtherSearchBtn")
+const search_box1 = document.querySelector("#search_box1")
 
 othersearch.addEventListener('click', (e) => {
-    window.open('Template/search.html');
+   search_box1.style.marginLeft = '200px'
 })

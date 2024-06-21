@@ -174,3 +174,9 @@ jQuery(() => {
     category.addEventListener('click', category_hide);
 })
 
+const othersearch = document.querySelector("#OtherSearchBtn")
+const search_box1 = document.querySelector("#search_box1")
+
+othersearch.addEventListener('click', (e) => {
+   search_box1.style.marginLeft = '200px'
+})

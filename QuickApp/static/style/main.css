@@ -186,6 +186,8 @@
     background-color: #ffd700;
     border-radius: 50%;
     font-size: 20px;
+    margin-right: 10px;
+    display: none;
 }
 
 
@@ -1253,6 +1255,10 @@
 }
 
 @media (max-width: 500px){
+    .allmainpage nav .navbar .second #OtherSearchBtn{
+        display: block;
+    }
+    
     .allmainpage menu .menu{
         display: none;
         width: 55%;

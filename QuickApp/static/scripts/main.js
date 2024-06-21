@@ -174,3 +174,8 @@ jQuery(() => {
     category.addEventListener('click', category_hide);
 })
 
+const othersearch = document.querySelector("#OtherSearchBtn")
+
+othersearch.addEventListener('click', (e) => {
+    window.open('Template/search.html');
+})

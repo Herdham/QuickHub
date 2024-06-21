@@ -182,7 +182,7 @@
 }
 
 
-.allmainpage main nav .search_box{
+.allmainpage nav .search_box{
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
@@ -197,7 +197,7 @@
     z-index: 5;
 }
 
-.allmainpage main nav .search_box input{
+.allmainpage nav .search_box input{
     border: none;
     outline: none;
     background-color: transparent;
@@ -207,7 +207,7 @@
     flex-grow: 3;
 }
 
-.allmainpage main nav .search_box #search_btn{
+.allmainpage nav .search_box #search_btn{
     background-color: #ffd700;
     padding: 12px;
     font-size: 20px;
@@ -215,7 +215,7 @@
     border-radius: 50%;
 }
 
-.allmainpage main nav .search_box #cancle_btn{
+.allmainpage nav .search_box #cancle_btn{
     font-size: 22px;
     font-weight: 900;
     margin-right: 8px;

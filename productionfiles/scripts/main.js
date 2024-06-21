@@ -176,10 +176,39 @@ jQuery(() => {
 
 const othersearch = document.querySelector("#OtherSearchBtn")
 const search_box1 = document.querySelector(".search_box1")
-const join = document.querySelector(".join")
+
 
 jQuery(() => {
+    const first = $('.first')
+    const second = jQuery('.second')
+    const menu = jQuery('.menu')
     othersearch.addEventListener('click', () => {
-        console.log('Hey')
+        let search_box1 = document.createElement('div')
+        search_box1.setAttribute('class', 'search_box1')
+        let search = document.createElement('div')
+        search.setAttribute('class', 'searchs')
+        let inputs = document.createElement('input')
+        inputs.setAttribute('type', 'text')
+        let icons = document.createElement('ion-icon')
+        icons.setAttribute('name', 'search-outline')
+        let icons1 = document.createElement('ion-icon')
+        icons1.setAttribute('name', 'close-outline')
+        icons.setAttribute('class', 'icons')
+        icons1.setAttribute('class', 'icons1')
+        inputs.setAttribute('id', 'searchsbar')
+        inputs.setAttribute('placeholder', 'What are you looking for')
+        search.append(inputs, icons)
+        search_box1.append(search, icons1)
+        $(second).before(search_box1)
+        $(first).hide()
+        $(second).hide()
+        $(menu).hide()
     })
+})
+
+
+const icon = $('.icons1')
+$(icon).click(() => {
+    const search = document.querySelector('.search_box1')
+    $(search).hide()
 })

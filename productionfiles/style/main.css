@@ -469,7 +469,7 @@
     width: 100%;
     display: none;
     position: sticky;
-    top: 16%;
+    top: 18%;
     z-index: 8;
 }
 
@@ -1294,7 +1294,7 @@
     }
 
     .allmainpage menu .menu .menu_categories ul li a{
-        white-space: wrap;
+        white-space: normal;
     }
 
     .allmainpage main .maincontainer .mainheading h1{

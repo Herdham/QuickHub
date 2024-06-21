@@ -219,11 +219,11 @@
     outline: none;
 }
 
-.allmainpage nav .navbar .search_box1 .icons1{
+.allmainpage nav .navbar .search_box1 .icons_one{
     padding: 8px;
     border-radius: 50%;
     background-color: #ffd700;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .newelement{
@@ -309,7 +309,7 @@
     background-color: #ccc;
     width: 20%;
     height: 100vh;
-    z-index: 10;
+    z-index: 15;
     margin-top: 52px;
     padding: 10px;
     display: none;
@@ -398,7 +398,7 @@
     width: 100%;
     z-index: 10;
     position: fixed;
-    top: 48px;
+    top: 49px;
 }
 
 .allmainpage main .carousel .scrollBtn{
@@ -458,7 +458,7 @@
 
 .allmainpage main .carousel .categories_inner{
     left: 4%;
-    top: 75px;
+    top: 65px;
     position: absolute;
     background-color: #fff;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);

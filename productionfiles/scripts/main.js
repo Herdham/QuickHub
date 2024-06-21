@@ -196,19 +196,24 @@ jQuery(() => {
         icons.setAttribute('class', 'icons')
         let icons1 = document.createElement('ion-icon')
         icons1.setAttribute('name', 'close-outline')
-        icons1.setAttribute('class', 'icons1')
+        icons1.setAttribute('class', 'icons_one')
         search.append(inputs, icons)
         search_box1.append(search, icons1)
         $(second).before(search_box1)
         $(first).hide()
         $(second).hide()
-        $(menu).hide()
-    })
 
-    const icon = $('.icons')
-    $(icon).click(() => {
-        console.log("Hello World")
+        if (icons1.classList.contains('icons_one')) {
+            icons1.addEventListener('click', () => {
+                $(search_box1).hide()
+                $(first).show()
+                $(second).show()
+            })
+        }
     })
 })
+
+
+
 
 

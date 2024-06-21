@@ -462,13 +462,14 @@
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     padding: 3px;
     margin-bottom: 7px;
     width: 100%;
     display: none;
     position: sticky;
-    top: 20%;
+    top: 16%;
     z-index: 8;
 }
 
@@ -1290,6 +1291,10 @@
     .allmainpage menu .menu{
         display: none;
         width: 55%;
+    }
+
+    .allmainpage menu .menu .menu_categories ul li a{
+        white-space: wrap;
     }
 
     .allmainpage main .maincontainer .mainheading h1{

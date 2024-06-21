@@ -453,6 +453,46 @@
     color: #000;
 }
 
+.allmainpage main .search_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 3px;
+    margin-bottom: 7px;
+    width: 100%;
+    display: none;
+}
+
+.allmainpage main .search_box input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    flex-grow: 3;
+}
+
+.allmainpage main .search_box #search_btn{
+    background-color: #ffd700;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.allmainpage main .search_box #cancle_btn{
+    font-size: 22px;
+    font-weight: 900;
+    margin-right: 8px;
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: none;
+}
+
+
 
 
 .allmainpage main .maincontainer{
@@ -1306,6 +1346,14 @@
 
     .allmainpage main .carousel .scrollBtn ion-icon:last-child{
         left: 90%;
+    }
+
+    .allmainpage main .maincontainer .mainheading .search_box{
+        display: none;
+    }
+
+    .allmainpage main .search_box{
+        display: block;
     }
 
 }

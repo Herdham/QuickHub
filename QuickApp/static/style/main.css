@@ -420,6 +420,7 @@
     border-radius: 3px;
     width: 300px;
     padding: 10px;
+    z-index: 10; 
     display: none;
     height: 300px;
     overflow-y: scroll;
@@ -469,7 +470,7 @@
     display: none;
     position: sticky;
     top: 18%;
-    z-index: 8;
+    z-index: 4;
 }
 
 .allmainpage main .search_box input{

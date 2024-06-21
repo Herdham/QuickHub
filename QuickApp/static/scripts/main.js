@@ -169,7 +169,7 @@ jQuery(() => {
         const x = category_inner.classList;
         x.contains("category_show") ? 
         (x.remove("category_show"), chevron.innerHTML = `<a href="#">Categories</a> <ion-icon name="chevron-down-outline"></ion-icon>`):
-        (x.add("category_show"), chevron.innerHTML = `<a href="#">Categories</a> <ion-icon name="chevron-up-outline"></ion-icon>`, category_inner.style.zIndex = 15)
+        (x.add("category_show"), chevron.innerHTML = `<a href="#">Categories</a> <ion-icon name="chevron-up-outline"></ion-icon>`)
     }
     category.addEventListener('click', category_hide);
 })

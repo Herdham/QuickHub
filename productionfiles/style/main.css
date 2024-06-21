@@ -349,7 +349,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    position: relative;
+    position: sticky;
+    padding-top: 60px;
 }
 
 .allmainpage main .carousel .scrollBtn{

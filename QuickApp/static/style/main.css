@@ -349,7 +349,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    position: fixed;
+    position: relative;
 }
 
 .allmainpage main .carousel .scrollBtn{

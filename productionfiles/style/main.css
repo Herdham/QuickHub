@@ -453,6 +453,7 @@
     color: #000;
 }
 
+
 .allmainpage main .search_box{
     display: flex;
     align-items: center;
@@ -491,9 +492,6 @@
     border-radius: 50%;
     display: none;
 }
-
-
-
 
 .allmainpage main .maincontainer{
     display: flex;

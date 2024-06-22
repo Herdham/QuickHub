@@ -12,6 +12,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: red;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -355,7 +359,7 @@
 .allmainpage main .carousel .scrollBtn{
     display: flex;
     align-items: center;
-    
+
 }
 
 .allmainpage main .carousel .scrollBtn ion-icon{
@@ -416,7 +420,7 @@
     border-radius: 3px;
     width: 300px;
     padding: 10px;
-    z-index: 5; 
+    z-index: 5;
     display: none;
     height: 300px;
     overflow-y: scroll;
@@ -652,7 +656,7 @@
 }
 
 .allmainpage main .viewCourses .viewheading .viewBtn button{
- 
+
     outline: none;
     border: none;
     padding: 6px;
@@ -1058,7 +1062,7 @@
         position: absolute;
         transform: translate(-50%, -50%);
 
-        
+
     }
 
     .allmainpage main .maincontainer .mainheading h1{
@@ -1068,7 +1072,7 @@
     .allmainpage main .tutoriallab .tutorialwrapper .tutorialcontainer .tutorcourse a:nth-of-type(5){
         display: flex;
     }
-    
+
     .allmainpage main .tutoriallab .tutorialwrapper .tutorialcontainer .tutorcourse a:nth-of-type(6){
         display: flex;
     }
@@ -1325,8 +1329,8 @@
         display: none;
         width: 65%;
     }
-    
-    
+
+
     .allmainpage main .maincontainer .mainheading .populars ul li:nth-of-type(3){
         display: none;
     }
@@ -1351,7 +1355,7 @@
     .allmainpage main .viewCourses .viewContainer .viewWrapper h2{
         font-size: 16px;
     }
-    
+
     .allmainpage main .viewCourses .viewContainer .viewWrapper p{
         font-size: 13px;
     }
@@ -1409,7 +1413,7 @@
     .allmainpage footer .first a h1{
         font-size: 30px;
     }
-    
+
     .allmainpage footer .first p{
         font-size: 13px;
     }

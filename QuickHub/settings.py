@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-p!9(#c=m0tqc--254&qn2d3*z$w*ok4vat#lj5drk-2o$j4apv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['Herdham001.pythonanywhere.com']
 
 
 # Application definition
@@ -75,10 +75,21 @@ WSGI_APPLICATION = 'QuickHub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'default':{
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Herdham001$QuickHubDB',
+        'USER': 'Herdham001',
+        'PASSWORD': 'QuickHub001@',
+        'HOST': 'Herdham001.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
     }
 }
 
@@ -121,7 +132,6 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'productionfiles'
 
-STATICFILES_DIRS = [BASE_DIR / 'mystaticfiles']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

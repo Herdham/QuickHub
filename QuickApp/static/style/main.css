@@ -185,6 +185,53 @@ body{
     font-weight: 700;
 }
 
+.allmainpage nav .navbar .second #OtherSearchBtn{
+    background-color: #ffd700;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+    display: none;
+    padding: 10px;
+}
+
+.allmainpage nav .navbar .search_box1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.allmainpage nav .navbar .search_box1 .searchs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.allmainpage nav .navbar .search_box1 .searchs .icons{
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.allmainpage nav .navbar .search_box1 .searchs input{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.allmainpage nav .navbar .search_box1 .icons_one{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #ffd700;
+    font-size: 22px;
+}
+
 .newelement{
     position: absolute;
     max-width: 250px;
@@ -196,6 +243,7 @@ body{
     cursor: pointer;
     text-decoration: none;
     display: none;
+    z-index: 10;
 }
 .newelement:hover{
     background-color: var(--thirdcolor);
@@ -232,6 +280,7 @@ body{
     margin-top: 290px;
     cursor: pointer;
     display: none;
+    z-index: 15;
 }
 
 .newelement2 .eleinner{
@@ -268,7 +317,7 @@ body{
     background-color: #ccc;
     width: 20%;
     height: 100vh;
-    z-index: 10;
+    z-index: 15;
     margin-top: 52px;
     padding: 10px;
     display: none;
@@ -353,7 +402,11 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    position: relative;
+    background-color: #fff;
+    width: 100%;
+    z-index: 8;
+    position: fixed;
+    top: 49px;
 }
 
 .allmainpage main .carousel .scrollBtn{
@@ -420,10 +473,14 @@ body{
     border-radius: 3px;
     width: 300px;
     padding: 10px;
+<<<<<<< HEAD
     z-index: 5;
+=======
+>>>>>>> 50a5baf4356f0758201f2e4c0c136c83f01ca87a
     display: none;
     height: 300px;
     overflow-y: scroll;
+    z-index: 5;
 }
 
 .allmainpage main .carousel .categories_inner.category_show{
@@ -457,8 +514,6 @@ body{
     color: #000;
 }
 
-
-
 .allmainpage main .maincontainer{
     display: flex;
     align-items: center;
@@ -469,7 +524,7 @@ body{
 }
 
 .allmainpage main .maincontainer .mainheading{
-    top: 70%;
+    top: 75%;
     left: 30%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -1246,9 +1301,17 @@ body{
 }
 
 @media (max-width: 500px){
+    .allmainpage nav .navbar .second #OtherSearchBtn{
+        display: block;
+    }
+
     .allmainpage menu .menu{
         display: none;
         width: 55%;
+    }
+
+    .allmainpage menu .menu .menu_categories ul li a{
+        white-space: normal;
     }
 
     .allmainpage main .maincontainer .mainheading h1{
@@ -1310,6 +1373,14 @@ body{
 
     .allmainpage main .carousel .scrollBtn ion-icon:last-child{
         left: 90%;
+    }
+
+    .allmainpage main .maincontainer .mainheading .search_box{
+        display: none;
+    }
+
+    .allmainpage main .search_box{
+        display: flex;
     }
 
 }

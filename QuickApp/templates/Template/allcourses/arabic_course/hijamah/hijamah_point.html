@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Hijamah Tutorial Course & Marketplace</title>
+        <title>Point of Hijamah Tutorial Course & Marketplace</title>
         <link rel="stylesheet" href="{% static '/style/allcourses_css/hijama.css'%}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,49 +38,49 @@
                     </div>
                </menu>
 
-                <nav>
-                    <div class="navbar">
-                        <!-- nav first -->
-                        <ion-icon name="menu-outline" class="menu"></ion-icon>
-                        <div class="first">
-                              
-                            <a href="/" class="logo">
-                                <img src="{% static '/images/logo/quicklogo1.png'%}" alt="">
-                                <h3>QuickHub</h3>
-                            </a>
+               <nav>
+                <div class="navbar">
+                    <!-- nav first -->
+                    <ion-icon name="menu-outline" class="menu"></ion-icon>
+                    <div class="first">
+                          
+                        <a href="/" class="logo">
+                            <img src="{% static '/images/logo/quicklogo1.png'%}" alt="">
+                            <h3>QuickHub</h3>
+                        </a>
 
-                            <div class="search">
-                                <input type="text" id="searchbtn" placeholder="What class are your looking for today?">
-                                <ion-icon name="close-outline" id="cancleBtn"></ion-icon>
-                                <ion-icon name="search-outline" id="searchBtn"></ion-icon>                                 
-                            </div>
-
-                            <ul class="moreabout">
-                                <li>
-                                    <a href="#">QuickHub Pro</a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                    </svg>
-                                </li>
-                                <li>
-                                    <a href="#">Explore</a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                    </svg>
-                                </li>
-                            </ul>
+                        <div class="search">
+                            <input type="text" id="searchbtn" placeholder="What class are your looking for today?">
+                            <ion-icon name="close-outline" id="cancleBtn"></ion-icon>
+                            <ion-icon name="search-outline" id="searchBtn"></ion-icon>                                 
                         </div>
 
-                        <!-- nav second -->
-                        <div class="second">
-                            <ul>
-                                <li class="become"><a href="{% url 'become' %}">Become a Teacher</a></li>
-                                <li class="signin"><a href="{% url 'signin' %}">Sign In</a></li>
-                            </ul>
-                            <a href="{% url 'signup' %}" class="join">Join</a>
-                        </div>
+                        <ul class="moreabout">
+                            <li>
+                                <a href="#">QuickHub Pro</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </li>
+                            <li>
+                                <a href="#">Explore</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
+
+                    <!-- nav second -->
+                    <div class="second">
+                        <ul>
+                            <li class="become"><a href="{% url 'become' %}">Become a Teacher</a></li>
+                            <li class="signin"><a href="{% url 'signin' %}">Sign In</a></li>
+                        </ul>
+                        <a href="{% url 'signup' %}" class="join">Join</a>
+                    </div>
+                </div>
+               </nav>
  
                 <div class="carousel">
                         <div class="scrollBtn">
@@ -106,7 +106,7 @@
                         </div>
                         <ul class="carouselbody">
                             <li id="chevron" class="active flex"><a href="#">Categories</a><ion-icon name="chevron-down-outline" id="ion"></ion-icon></li>
-                            <li><a href="{% url 'p_default' %}">Python</a></li>
+                            <li><a href="{% url 'default' %}">Python</a></li>
                             <li><a href="#">C++</a></li>
                             <li><a href="#">c#</a></li>
                             <li><a href="#">Java</a></li>
@@ -145,31 +145,34 @@
 
                     <div class="maincontainer">
                         <div class="allmain">
-                            <h1>Hijamah Tutorial</h1>
+                            <h1>Hijamah Point</h1>
+                            
                             <div class="prevNext">
-                                <a href="/default">Previous</a>
-                                <a href="/historical">Next</a>
+                                <a href="{% url 'effect' %}">Previous</a>
+                                <a href="#">Next</a>
                             </div>
                             
-                            <p>Al-hijamah is a wet cupping therapy of prophetic medicine, and prophet Muhammed, peace be upon hom, strongly
-                                recommended Al-Hijamah, saying: "The best of your treatment is is Al-hijamah"
-                            </p><br>
-                            <div class="study">
-                                <p>Introduction Hijamah <b>(حجامة)</b> comes from the Arabic root word <b>(حجم)</b> which means “to diminish in volume”, and refers to the 
-                                    reduction in blood volume or to the vacuum effect used to draw blood from the body. In the case of the Ahaadeeth <b>(sayings 
-                                    of the Nabi [SAW])</b> regarding hijamah it refers to the drawing of blood from the body for therapeutic purposes, either to 
-                                    maintain health in the case of one who is not sick or to cure a specific illness or ailment. impurities and toxins away from 
-                                    the nearby tissues and organs towards the surface for elimination via the break in the skin layer created through the incisions 
-                                    made prior to the application of the "cup" many different methods including sucking with the mouth directly over a cut or wound 
-                                    (as in the case of poisonous bites), using a leech to draw blood, the use of instruments such as animal horns as was done in 
-                                    ancient times, or the more modern methods of using bamboo, glass or plastic “cups”, either with fire or a pump mechanism.The 
-                                    practice of applying a partial vacuum by these means causes the tissues beneath the cup to be drawn up and swell, thereby increasing 
-                                    blood flow to the affected area. This enhanced blood flow draws impurities and toxins away from the nearby tissues and organs towards
-                                    the surface for elimination via the break in the skin layer created through the incisions made prior to the application of the "cup" 
-                                    or similar device . Although in the olding age practioner make use of bamboo, horn, glass for Hijamah but,the most advicable and 
-                                    applicable is the cupping therapy.</p>
+                            <div class="example">
+                                <div class="exampleinner">
+                                    <p>Highlighting the particular points where the Prophet himself got cupped,<br> 
+                                    the following are regarded as the Sunnah Points: <p><b>Between the Shoulders 
+                                    (KAHIL  Upper Back)</b></p><br>  The area between the shoulders blades, most commonly<br>
+                                     in line with the inferior end of the scapula is ideal for cupping therapy.</p>
+                                    <p><b>And Also</b></p>
+                                    <p>"Hijama points is the ultimate resource to find hijama treatment plans for <br>
+                                        different ailment. Provides an indepth look at the issue, symptoms and its <br>
+                                        causes -offers a complete treatment plan showing details of the hijama points <br>
+                                        to focus on and lifestyle changes require."</p>
+                                </div>
                             </div>
                             
+                            <div class="example">
+                                <div class="exampleinner">
+                                    <img src="{% static '/images/allcourses/H_images.jfif' %}" style="width: 200px; height: 300px;"  alt="">
+                                    <img src="{% static '/images/allcourses/H_Chiropractic-img4.jpg' %}" style="width: 300px; height: 350px;"  alt="">
+                                    <img src="{% static '/images/allcourses/head-positions_large.gif' %}" style="width: 200px; height: 350px;" alt="">
+                                </div>
+                            </div>
 
                             <!-- Optional -->
                             <div class="optional">
@@ -179,8 +182,8 @@
                             </div>
 
                             <div class="prevNext">
-                                <a href="/default">Previous</a>
-                                <a href="/historical">Next</a>
+                                <a href="/effect">Previous</a>
+                                <a href="#">Next</a>
                             </div>
                         </div>
                     </div>

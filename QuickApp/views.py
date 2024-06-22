@@ -12,16 +12,10 @@ def main(request):
     template = loader.get_template('Template/main.html')
     return HttpResponse(template.render())
 
-#for student_profile
-@login_required(login_url='signin')
-def profile(request):
-    username = User.objects.all().values()
-    context = {'username': username}
-    return render(request, 'Template/profile.html', context)
-
 #for signup page
 def signup(request):
     if request.method == 'POST':
+        first = request.POST['first']
         uname = request.POST['user']
         email = request.POST['email']
         password = request.POST['pass']
@@ -33,7 +27,7 @@ def signup(request):
             my_user = User.objects.create_user(uname, email, password, first)
             my_user.save()
             return redirect('signin')
-
+    
     return render(request, 'Template/signup.html')
 
 #for signin page
@@ -50,6 +44,13 @@ def signin(request):
 
     return render(request, 'Template/signin.html')
 
+#for student_profile
+@login_required(login_url='signin')
+def profile(request):
+    username = User.objects.all().values()
+    context = {'username': username}
+    return render(request, 'Template/profile.html', context)
+
 #for logout
 @login_required(login_url='signin')
 def signout(request):
@@ -59,7 +60,7 @@ def signout(request):
 
 #for become page
 def become(request):
-      return render(request, 'Template/teacher_template/become_instructor.html')
+      return render(request, 'Template/teacher_template/become_instructor.html')  
 
 #for instructor signup
 def instructor_signup(request):
@@ -130,6 +131,10 @@ def h_method(request):
 
 def h_effect(request):
     template = loader.get_template('Template/allcourses/arabic_course/hijamah/effect.html')
+    return HttpResponse(template.render())
+
+def h_point(request):
+    template = loader.get_template('Template/allcourses/arabic_course/hijamah/hijamah_point.html')
     return HttpResponse(template.render())
 
 #for python course
